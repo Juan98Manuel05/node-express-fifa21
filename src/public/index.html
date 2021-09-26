@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA 21</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-app-bar height="110" app>
+                <v-toolbar-title class="pl-16">
+                    <v-img
+                        lazy-src="https://res.cloudinary.com/dbepipmro/image/upload/v1632670386/1280px-FIFA_21_logo.svg_gss3bx.png"
+                        src="https://res.cloudinary.com/dbepipmro/image/upload/v1632670386/1280px-FIFA_21_logo.svg_gss3bx.png"
+                        width="350"
+                    ></v-img>
+                </v-toolbar-title>
+                <v-spacer></v-spacer>
+            </v-app-bar>
+            <v-main class="bg-fifa21">
+                <v-container fluid>
+                    <Players></Players>                
+                </v-container>
+            </v-main>
+        </v-app>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="js/players.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

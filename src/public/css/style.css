@@ -1,0 +1,24 @@
+.bg-fifa21{
+    background-image: url('https://res.cloudinary.com/dbepipmro/image/upload/v1632677801/o_1em1mm80u4ue96j1qmuj7f4gsr_revef1.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.box-card-search{
+    box-shadow: 0px 25px 57px -35px black !important;
+}
+
+.avatar-player{
+    position: absolute;
+    top: -19px;
+    left: 3px;
+}
+
+.bg-card-file{
+    background-image: url('https://res.cloudinary.com/dbepipmro/image/upload/v1632686586/3031918-middle_hkrqli.png');
+}
+
+.info-card  {
+    display: flex;
+    align-items: end;
+}
