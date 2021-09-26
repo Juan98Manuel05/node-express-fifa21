@@ -1,7 +1,7 @@
 # node-express-fifa21
 Replica api fifa 21 with somethings styles 
 
-npm run dev
+<code>npm run dev</code>
 
 <ul>
   <li>Node Js</li>
