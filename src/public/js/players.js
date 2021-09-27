@@ -224,8 +224,8 @@ Vue.component('Players',{
                     });
                 })
         },
-        orderByList(param){ 
-            this.players( param )
+        orderByList(){ 
+            this.players()
         },
         async players(){
             this.listPlayers = []
