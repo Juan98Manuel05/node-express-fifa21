@@ -203,7 +203,7 @@ Vue.component('Players',{
             this.filePlayer.nationality = item.nationality
         },
         totalPages(){
-            for (let index = 1; index <= 480; index++) {
+            for (let index = 1; index <= 709; index++) {
                 this.pagesPlayers.push(index)
             }
         },
