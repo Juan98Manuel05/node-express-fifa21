@@ -11,9 +11,12 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 router.get('/', async(req, res) =>{
 
     const response = await fetch(`https://www.easports.com/fifa/ultimate-team/api/fut/item`)
-    const { totalPages, items } = await response.json() 
+    const { totalPages } = await response.json() 
 
     for(let i = 0; i <= totalPages; i ++){
+        
+        const response = await fetch(`https://www.easports.com/fifa/ultimate-team/api/fut/item?page=${i}`)
+        const { items } = await response.json() 
         // const values = [] 
         _.each(items, (player, i) => { 
             
