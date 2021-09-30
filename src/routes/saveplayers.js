@@ -14,9 +14,8 @@ router.get('/', async(req, res) =>{
     const { totalPages, items } = await response.json() 
 
     for(let i = 0; i <= totalPages; i ++){
-
         // const values = [] 
-        _.each(items, (player, i) => {
+        _.each(items, (player, i) => { 
             
             const name = `${player.firstName} ${player.lastName}`
             const position = player.position
