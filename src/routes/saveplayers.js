@@ -10,9 +10,10 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 
 router.get('/', async(req, res) =>{
 
-    for(let i = 0; i <= 908; i ++){
-        const response = await fetch(`https://www.easports.com/fifa/ultimate-team/api/fut/item?page=${i}`)
-        const { items } = await response.json()
+    const response = await fetch(`https://www.easports.com/fifa/ultimate-team/api/fut/item`)
+    const { totalPages, items } = await response.json() 
+
+    for(let i = 0; i <= totalPages; i ++){
 
         // const values = [] 
         _.each(items, (player, i) => {
